@@ -12,6 +12,8 @@ import java.util.logging.Logger;
 
 import javax.imageio.ImageIO;
 
+import app.model.Mood;
+import app.model.Saving;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -29,6 +31,7 @@ public class AddMoodPage_controller implements Initializable{
 	private String note;
 	private String timeOfDay;
 	private Date dateTime;
+	private String chosenMood;
     
 	@FXML
 	private TextArea text;

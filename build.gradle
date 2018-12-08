@@ -61,5 +61,5 @@ jar {
 }
 
 // name of the Eclipse project
-eclipse.project.name = 'TDD_ex02_solution'
+eclipse.project.name = 'co2012-cw2-group-12'
 // end::specific[]
