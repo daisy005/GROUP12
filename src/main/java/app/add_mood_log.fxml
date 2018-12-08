@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.AddMoodPage_controller">
+   <top>
+      <Label text="How are you feeling?" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <TextArea fx:id="text" prefHeight="517.0" prefWidth="743.0" text="Notes:" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </BorderPane.margin>
+      </TextArea>
+   </center>
+   <bottom>
+      <HBox prefHeight="86.0" prefWidth="1180.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="84.0" prefWidth="1177.0">
+               <children>
+                  <Button fx:id="UploadPicture_Btn" layoutX="976.0" layoutY="2.0" mnemonicParsing="false" onAction="#SubmitPhoto" prefHeight="38.0" prefWidth="187.0" text="Add a picture">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Submit_Btn" layoutX="978.0" layoutY="48.0" mnemonicParsing="false" onAction="#SUBMIT" prefHeight="38.0" prefWidth="183.0" text="Submit">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </bottom>
+   <padding>
+      <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+   </padding>
+   <left>
+      <VBox prefHeight="569.0" prefWidth="197.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="mood" prefHeight="29.0" prefWidth="193.0" promptText="How are you?" />
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="561.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="200.0" text="Your pictures:" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="image1" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>
